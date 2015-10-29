@@ -48,3 +48,8 @@
 - 全屏显示的代码来自于 Eike Send 的 jquery.fullscreen.js 项目：
   http://eikes.github.io/jquery.fullscreen.js/
 
+## 协议
+
+本项目的代码遵循 [GNU General Public License v3.0](http://www.gnu.org/licenses/gpl.html)
+
+本项目用到的各类图片，音乐资源收集自网络，仅供个人使用。若无意中侵犯了您的版权，请与项目作者联系，我会立即将其删除。
