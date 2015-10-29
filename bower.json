@@ -1,0 +1,13 @@
+{
+  "name": "gift-to-lover",
+  "description": "A personal gift to my lover.",
+  "version": "1.0.0-SNAPSHOT",
+  "authors": [
+    "Haixing Hu"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "vegas": "~2.1.3",
+    "buzz": "~1.1.10"
+  }
+}

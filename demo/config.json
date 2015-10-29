@@ -1,0 +1,17 @@
+{
+  "title": "献给我最爱的XXX",
+  "preload": true,
+  "timer": false,
+  "autoplay": true,
+  "shuffle": false,
+  "delay": 5000,
+  "cover": true,
+  "transition": "random",
+  "transition­Duration": 1000,
+  "animation": "random",
+  "animation­Duration": "auto",
+  "slides": [
+  ],
+  "musics": [
+  ]
+}

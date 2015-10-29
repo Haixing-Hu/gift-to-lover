@@ -1,2 +1,3 @@
 # gift-to-lover
-A personal gift to my lover.
+
+程序猿们，献给爱人的DIY礼物。
