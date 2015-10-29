@@ -25,7 +25,7 @@ $(function() {
   }
   // build the background musics
   var bgm = new buzz.sound(MUSICS, {
-    preload: PRELOAD,
+    preload: PRELOAD_MUSICS,
     autoplay: AUTOPLAY,
     loop: false,
     volume: 100,
@@ -33,7 +33,7 @@ $(function() {
   });
   // build the slides show
   $("body").vegas({
-    preload: PRELOAD,
+    preload: PRELOAD_IMAGES,
     timer: false,
     overlay: false,
     autoplay: AUTOPLAY,

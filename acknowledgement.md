@@ -10,6 +10,7 @@
   https://github.com/jaysalvat/buzz
 - 整体的设计思路来自于这篇 Jay Salvat 的这篇博文：
   http://tympanus.net/codrops/2011/07/05/fullscreen-slideshow-with-html5-audio/
-- 全屏显示的代码来自于 Eike Send 的 jquery.fullscreen.js 项目：
-  http://eikes.github.io/jquery.fullscreen.js/
+- 全屏显示的代码来自于下面的博文：
+  http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/
+
 
