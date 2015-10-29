@@ -64,11 +64,26 @@ var SLIDES = [];
  */
 var MUSICS = [];
 
-// 默认将使用"images"目录下的所有电影截图，按照其文件名顺序播放。
+// 默认将使用"images"目录下的所有电影截图，按照其文件名顺序播放，图片格式都必须为jpg。
 // 如果要增加或减少图片的数目，请修改下面循环的最大值。
+// 另外，start.jpg 是第一张要播放的；end.jpg是最后一张。
 // 当然，也可以直接定义SLIDES数组的值，不过那样图片多了会比较麻烦。
+(function() {
+  SLIDES.push({src: "./images/start.jpg"});
+  for (var i = 1; i <= 388; ++i) {
+    SLIDES.push({src: "./images/" + i + ".jpg"});
+  }
+  SLIDES.push({src: "./images/end.jpg"});
+})();
 
-
-// 默认将使用"sounds"目录下的所有音乐，按照其文件名顺序播放。
-// 如果要增加或减少图片的数目，请修改下面循环的最大值。
+// 默认将使用"musics"目录下的所有音乐，按照其文件名顺序播放。
+// 如果要增加或减少音乐的数目，请修改下面循环的最大值。
+// 另外，start.mp3 是第一首要播放的；end.mp3 是最后一首。
 // 当然，也可以直接定义MUSICS数组的值，不过那样图片多了会比较麻烦。
+// (function() {
+//   MUSICS.push("musics/start.mp3");
+//   for (var i = 1; i <= 388; ++i) {
+//     MUSICS.push("musics/" + i + ".mp3");
+//   }
+//   MUSICS.push("musics/end.mp3");
+// })();

@@ -2,6 +2,7 @@ $(function() {
   // set the title
   $("title").html(TITLE);
 
+  console.debug("init slideshow");
   // set the slides show
   $("body").vegas({
     preload: PRELOAD,
