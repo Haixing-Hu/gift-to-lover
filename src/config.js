@@ -25,7 +25,7 @@ var SHUFFLE = false;
 /**
  * 每幅图片之间的延时，单位为毫秒（1000毫秒为1秒）。
  */
-var DELAY = 5000;
+var DELAY = 8000;
 
 /**
  * 图片切换的过渡动画效果。"random"表示采用随机效果。建议使用"random"。
@@ -69,11 +69,11 @@ var MUSICS = [];
 // 另外，start.jpg 是第一张要播放的；end.jpg是最后一张。
 // 当然，也可以直接定义SLIDES数组的值，不过那样图片多了会比较麻烦。
 (function() {
-  SLIDES.push({src: "./images/start.jpg"});
+  SLIDES.push("./images/start.jpg");
   for (var i = 1; i <= 388; ++i) {
-    SLIDES.push({src: "./images/" + i + ".jpg"});
+    SLIDES.push("./images/" + i + ".jpg");
   }
-  SLIDES.push({src: "./images/end.jpg"});
+  SLIDES.push("./images/end.jpg");
 })();
 
 // 默认将使用"musics"目录下的所有音乐，按照其文件名顺序播放。
@@ -87,3 +87,6 @@ var MUSICS = [];
 //   }
 //   MUSICS.push("musics/end.mp3");
 // })();
+(function() {
+  MUSICS.push("./musics/一生所爱-原声带.mp3");
+})();
