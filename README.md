@@ -22,7 +22,9 @@
 
 ## 支持的浏览器
 
-Firefox，Chrome，Safari的最新版，以及其移动版本；IE暂不支持全屏。
+支持Firefox，Chrome，Safari的最新版，以及其移动版本；IE暂不支持全屏。
+
+建议使用最新版的Chrome以获得最佳的浏览效果。
 
 ## 计划
 
