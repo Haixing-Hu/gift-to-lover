@@ -47,7 +47,7 @@ var ANIMATION = "random";
  *
  * "auto"表示使用自动的值，即等于DELAY的值。建议使用"auto"。
  */
-var ANIMATION_DURATION = "auto";
+var ANIMATION_DURATION = DELAY - TRANSITION_DURATION;
 
 /**
  * 是否显示致谢部分。建议设置为true，感谢所有的资源提供者。
