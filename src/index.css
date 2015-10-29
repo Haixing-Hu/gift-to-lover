@@ -1,0 +1,18 @@
+.navbar {
+  float: right;
+  z-index: 9999;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.navbar a {
+  display: none;
+  margin: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s color;
+  color: #fff;
+  &:hover {
+    color: darken(#fff, 15);
+  }
+}

@@ -1,32 +1,23 @@
-
-//进入全屏
-function enterFullscreen() {
-  var el = document.documentElement;
-  if (el.requestFullscreen) {
-    el.requestFullscreen();
-  } else if (el.mozRequestFullScreen) {
-    el.mozRequestFullScreen();
-  } else if (el.webkitRequestFullScreen) {
-    el.webkitRequestFullScreen();
-  }
-}
-
-//退出全屏
-function exitFullscreen() {
-  var el = document;
-  if (el.exitFullscreen) {
-    el.exitFullscreen();
-  } else if (el.mozCancelFullScreen) {
-    el.mozCancelFullScreen();
-  } else if (el.webkitCancelFullScreen) {
-    el.webkitCancelFullScreen();
-  }
-}
-
 // 文档初始化后执行
 $(function() {
   // set the title
   $("title").html(TITLE);
+  // set the event handlers
+  if (fullScreenApi.supportsFullScreen) {
+    $("#enter-fullscreen").show();
+  }
+  // enter the fullscreen
+  $("#enter-fullscreen").on("click", function() {
+    fullScreenApi.requestFullScreen(document.documentElement);
+    $("#enter-fullscreen").hide();
+    $("#exit-fullscreen").show();
+  });
+  // exit the fullscreen
+  $("#exit-fullscreen").on("click", function() {
+    fullScreenApi.cancelFullScreen(document.documentElement);
+    $("#enter-fullscreen").show();
+    $("#exit-fullscreen").hide();
+  });
   // build the slides list
   var slides = [];
   for (var i = 0; i < SLIDES.length; ++i) {
@@ -40,8 +31,6 @@ $(function() {
     volume: 100,
     webAudioApi: false
   });
-  // enter the fullscreen
-  enterFullscreen();
   // build the slides show
   $("body").vegas({
     preload: PRELOAD,

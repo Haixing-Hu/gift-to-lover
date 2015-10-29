@@ -8,6 +8,7 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "vegas": "~2.1.3",
-    "buzz": "~1.1.10"
+    "buzz": "~1.1.10",
+    "font-awesome": "~4.4.0"
   }
 }

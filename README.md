@@ -20,10 +20,14 @@
 - 按需要，修改 `src/config.js` 文件中的配置；文件中有中文注释，很容易看懂；
 - 打开 `src/index.html` 网页可以看到效果
 
+## 支持的浏览器
+
+Firefox，Chrome，Safari的最新版，以及其移动版本；IE暂不支持全屏。
+
 ## 计划
 
 - [x] 加入背景音乐播放功能；
-- [ ] 加入全屏显示功能（是指将整个浏览器页面全屏，隐藏浏览器窗口）；
+- [x] 加入全屏显示功能（是指将整个浏览器页面全屏，隐藏浏览器窗口）；
 - [ ] 电影截图不够清晰，需要重新选择高清的、无水印的电影截图；
 - [ ] 需要调整电影截图的播放顺序；
 - [ ] 开头增加一些字幕，描述一下礼物献给的对象以及其他一些要对她/他说的话；
@@ -45,8 +49,8 @@
   https://github.com/jaysalvat/buzz
 - 整体的设计思路来自于这篇 Jay Salvat 的这篇博文：
   http://tympanus.net/codrops/2011/07/05/fullscreen-slideshow-with-html5-audio/
-- 全屏显示的代码来自于 Eike Send 的 jquery.fullscreen.js 项目：
-  http://eikes.github.io/jquery.fullscreen.js/
+- 全屏显示的代码来自于下面的博文：
+  http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/
 
 ## 协议
 
