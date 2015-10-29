@@ -39,7 +39,7 @@
 
 - 项目的灵感以及最初的电影截图来自于 @陈弈飘 同学在知乎上的下面这个答案：
   http://www.zhihu.com/question/21682442/answer/36924153?group_id=636890926812016640
-- 幻灯片播放代码来自于 Jay Salvat 的 Vegas：
+- 幻灯片播放代码来自于 Jay Salvat 的 vegas 项目：
   https://github.com/jaysalvat/vegas
 - 音乐播放代码来自于 Jay Salvat 的 buzz 项目：
   https://github.com/jaysalvat/buzz
