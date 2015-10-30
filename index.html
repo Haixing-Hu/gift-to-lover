@@ -29,9 +29,11 @@
 
 <p>全屏以幻灯片模式显示一系列图片，并循环播放背景音乐。</p>
 
-<p>目前默认的图片是来自电影的男女主角说“我爱你”的截图。默认的背景音乐是一些经典的中文情歌。</p>
+<p>图片来自网络上网友收集的电影中出现“我爱你”字幕的截图。虽然这些图片不是鄙人一一截图的，但在几千张图片中排除重复的，排除有水印的，排除分辨率低的，再排除镜头画面不美的，最后剩下520张，也确实花费了不少时间和心思。</p>
 
-<p>当然，此项目不仅仅可以用于表白，还可以用作生日礼物、圣诞礼物等等——只需要更换合适的图片和背景音乐，定制合适的字幕。</p>
+<p>背景音乐目前只有一首，循环播放卢冠廷的《一生所爱》。这是鄙人最喜欢的歌曲之一，词曲皆佳，最重要的是旋律风格和整体幻灯片播放的风格很搭配。当然，也可以用多首背景音乐循环播放，但暂时尚未找到合适的音乐。</p>
+
+<p>此项目不仅仅可以用于表白，还可以用作生日礼物、圣诞礼物等等。只需要更换合适的图片和背景音乐，定制合适的字幕即可。</p>
 
 <p>各位同学若对此项目有任何意见或建议，请在 issue 中和我讨论。</p>
 
@@ -48,7 +50,15 @@
 <ul>
 <li>check out 这个代码库；如果不会用git，也可以直接下载整个代码库的压缩包然后解压；</li>
 <li>按需要，修改 <code>src/config.js</code> 文件中的配置；文件中有中文注释，很容易看懂；</li>
-<li>打开 <code>src/index.html</code> 网页可以看到效果</li>
+<li>打开 <code>src/index.html</code> 网页可以看到效果；</li>
+<li>
+<code>src/images</code>中保存的图片是幻灯片轮流播放的图片，其中"start.jpg"是第一张图片；"end.jpg"是最后一张；其他中间的图片，文件名从<code>1.jpg</code>开始依次编号；注意文件后缀必须为<code>.jpg</code>，
+也就是说只支持 JPEG 格式的图片；添加或减少图片数目后，必须修改<code>src/config.js</code>中的<code>SLIDES_COUNT</code>变量值；</li>
+<li>
+<code>src/musics</code>中保存的音乐是幻灯片播放时的背景音乐，文件名从<code>1.mp3</code>开始依次编号；注意文件后缀必须为<code>.mp3</code>，
+也就是说只支持 MP3 格式的音乐；添加或减少音乐数目后，必须修改<code>src/config.js</code>中的<code>MUSICS_COUNT</code>变量值；</li>
+<li>
+<code>src/rename_files.sh</code>脚本可以批量重命名当前目录中的文件，文件名以数字编号，从1开始，文件后缀依然为原文件后缀。此工具可用于重命名大批量的图片文件。</li>
 </ul>
 
 <h2>
@@ -77,6 +87,7 @@
 <ul>
 <li>[x] 加入背景音乐播放功能；</li>
 <li>[x] 加入全屏显示功能（是指将整个浏览器页面全屏，隐藏浏览器窗口）；</li>
+<li>[x] 增加图片计数器；</li>
 <li>[ ] 增加预载入进度条指示载入百分比；</li>
 <li>[ ] 电影截图不够清晰，需要重新选择高清的、无水印的电影截图；</li>
 <li>[ ] 需要调整电影截图的播放顺序；</li>
@@ -91,11 +102,14 @@
 <h2>
 <a id="致谢" class="anchor" href="#%E8%87%B4%E8%B0%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>致谢</h2>
 
-<p>此项目，使用了下述朋友们提供的资源和代码，在此一并表示感谢！</p>
+<p>此项目，使用了下述资源、代码和工具，在此一并表示感谢！</p>
 
 <ul>
 <li>项目的灵感以及最初的电影截图来自于 @陈弈飘 同学在知乎上的下面这个答案：
 <a href="http://www.zhihu.com/question/21682442/answer/36924153?group_id=636890926812016640">http://www.zhihu.com/question/21682442/answer/36924153?group_id=636890926812016640</a>
+</li>
+<li>还有个网上流传的所谓“520张我爱你电影截图.rar”，原始出处已经找不到了，网盘下载链接在此：
+<a href="http://pan.baidu.com/share/link?uk=2033284939&amp;shareid=1230432853">http://pan.baidu.com/share/link?uk=2033284939&amp;shareid=1230432853</a>
 </li>
 <li>幻灯片播放代码来自于 Jay Salvat 的 vegas 项目：
 <a href="https://github.com/jaysalvat/vegas">https://github.com/jaysalvat/vegas</a>
@@ -109,14 +123,24 @@
 <li>全屏显示的代码来自于下面的博文：
 <a href="http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/">http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/</a>
 </li>
+<li>Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了，连官网都找不到链接了：
+<a href="http://macphun.com/">http://macphun.com/</a>
+</li>
 </ul>
+
+<h2>
+<a id="请我喝杯咖啡" class="anchor" href="#%E8%AF%B7%E6%88%91%E5%96%9D%E6%9D%AF%E5%92%96%E5%95%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>请我喝杯咖啡</h2>
+
+<p>如果你觉得我的项目对你有所帮助，想要感谢我的话，那就拿出微信扫描下面二维码，请我喝杯拿铁咖啡吧 :-)</p>
+
+<p><img src="buy_me_a_coffee.png" alt="请我喝杯咖啡"></p>
 
 <h2>
 <a id="协议" class="anchor" href="#%E5%8D%8F%E8%AE%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>协议</h2>
 
 <p>本项目的代码遵循 <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License v3.0</a></p>
 
-<p>本项目用到的各类图片，音乐资源收集自网络，仅供个人使用。若无意中侵犯了您的版权，请与项目作者联系，我会立即将其删除。</p>
+<p>本项目用到的各类图片，音乐资源收集自网络，仅供个人使用。若无意中侵犯了您的版权，请与本人联系，我会立即将其删除。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Haixing-Hu/gift-to-lover">Gift-to-lover</a> is maintained by <a href="https://github.com/Haixing-Hu">Haixing-Hu</a>.</span>
