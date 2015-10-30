@@ -1,0 +1,38 @@
+{
+  "name": "join",
+  "main": "join.js",
+  "version": "3.0.0",
+  "homepage": "https://github.com/FuturesJS/join",
+  "authors": [
+    "AJ ONeal <coolaj86@gmail.com>"
+  ],
+  "description": "Joins JavaScript's asynchronous calls together similar to how `pthread_join` works for threads.",
+  "keywords": [
+    "futuresjs",
+    "promises",
+    "futures",
+    "join",
+    "async",
+    "asynchronous",
+    "when",
+    "then"
+  ],
+  "license": "Apache-v2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "3.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.0",
+    "commit": "ba6ad2c4e7b81706ea9467b36b62ab41b9548863"
+  },
+  "_source": "git://github.com/FuturesJS/join.git",
+  "_target": "~3.0.0",
+  "_originalSource": "join",
+  "_direct": true
+}

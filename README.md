@@ -72,12 +72,16 @@
   https://github.com/jaysalvat/vegas
 - 音乐播放代码来自于 Jay Salvat 的 buzz 项目：
   https://github.com/jaysalvat/buzz
-- 整体的设计思路来自于这篇 Jay Salvat 的这篇博文：
+- 带背景音乐的幻灯片播放的设计思路来自于这篇 Jay Salvat 的这篇博文：
   http://tympanus.net/codrops/2011/07/05/fullscreen-slideshow-with-html5-audio/
 - 全屏显示的代码来自于下面的博文：
   http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/
-- Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了，连官网都找不到链接了：
-  http://macphun.com/
+- 预载入幻灯片图像的代码思路来自下面的博文：
+  http://www.inwebson.com/jquery/jpreloader-a-preloading-screen-to-preload-images/
+- 预载入背景音乐的代码思路来自下面的答案：
+  http://stackoverflow.com/questions/5313646/how-to-preload-a-sound-in-javascript
+- Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了，连官网都找不到产品页面了。目前该软件在 App Store 上免费提供：
+  https://itunes.apple.com/us/app/snapselect-amazing-photo-duplicates/id935700987
 
 ## 请我喝杯咖啡
 

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>test</title>
+</head>
+
+<body>
+<script src="lib/join/join.js"></script>
+<script>
+;(function () {
+  'use strict';
+
+  var join = window.Join.create()
+    ;
+
+  // Use `join.add()` in place of a callback function
+  setTimeout(join.add(), 500, 'I', 'really');
+  setTimeout(join.add(), 700, 'really', 'LOVE');
+  setTimeout(join.add(), 200, 'JavaScript');
+
+  // Use `join.notify()` for incremental updates
+  join.notify(function (i, args) {
+    console.log(
+      'Callback #' + (i + 1)
+    + ' of ' + join.length
+    + ' completed', args
+    );
+  });
+
+  // Use `join.then(cb)` to fire `cb` when all of the `join.add()` callbacks have been called.
+  join.then(function (i, love, js) {
+    console.log('All of the timeouts have completed');
+    console.log(i, love, js);
+  });
+}());
+</script>
+</body>

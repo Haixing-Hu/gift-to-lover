@@ -10,14 +10,24 @@
 var TITLE = "献给我最爱的人";
 
 /**
- * 是否预加载所有的图片。
+ * 预载入图片的提示信息。
  */
-var PRELOAD_IMAGES = false;
+var LOADING_IMAGES = "正在载入图片，请稍后……";
 
 /**
- * 是否预加载所有的音乐。默认为只预加载元数据。
+ * 预载入音乐的提示信息。
  */
-var PRELOAD_MUSICS = "metadata";
+var LOADING_MUSICS = "正在载入音乐，请稍后……";
+
+/**
+ * 是否预加载所有的图片。
+ */
+var PRELOAD_IMAGES = true;
+
+/**
+ * 是否预加载所有的音乐。
+ */
+var PRELOAD_MUSICS = true;
 
 /**
  * 是否自动播放图片和音乐。
@@ -68,6 +78,11 @@ var SHOW_ACKNOWLEDGEMENT = true;
  * 是否显示幻灯片播放控制按钮（第一张，最后一张，前一张，下一张）。
  */
 var SHOW_PLAY_CONTROL = true;
+
+/**
+ * 是否显示幻灯片播放时每张幻灯片底部的计时进度条。
+ */
+var SHOW_TIMER = false;
 
 /**
  * 是否在最后一张幻灯片结束时停止播放。建议设置为true。

@@ -1,0 +1,22 @@
+{
+  "name": "sequence",
+  "version": "3.0.0",
+  "description": "Execute async code in chronological order. The sequence module of FuturesJS (Browser, Node.js, Bower, and Pakmanager)",
+  "homepage": "https://github.com/FuturesJS/sequence",
+  "keywords": ["futuresjs", "flow-control", "async", "asynchronous", "futures", "sequence", "chain", "step", "util", "browser"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FuturesJS/sequence.git"
+  },
+  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.com)",
+  "main": "sequence.js",
+  "directories": {
+    "lib": "."
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "*",
+    "ender": ">= 0.5.0"
+  }
+}
