@@ -17,7 +17,7 @@ var PRELOAD_IMAGES = false;
 /**
  * 是否预加载所有的音乐。默认为只预加载元数据。
  */
-var PRELOAD_MUSICS = "metadata";
+var PRELOAD_MUSICS = false;
 
 /**
  * 是否自动播放图片和音乐。
