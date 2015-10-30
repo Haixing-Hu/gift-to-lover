@@ -79,6 +79,12 @@
 - Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了：
   http://macphun.com/
 
+## 请我喝杯咖啡
+
+如果你觉得我的项目对你有所帮助，想要感谢我的话，那就拿微信扫描下面二维码，请我喝杯拿铁咖啡吧 :-)
+
+![请我喝杯咖啡](buy_me_a_coffee.png)
+
 ## 协议
 
 本项目的代码遵循 [GNU General Public License v3.0](http://www.gnu.org/licenses/gpl.html)
