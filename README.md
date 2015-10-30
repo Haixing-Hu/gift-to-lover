@@ -14,6 +14,10 @@
 
 另，征集电影截图，以及背景音乐。有推荐的电影或音乐也请提在 issue 中，谢谢！
 
+## 演示
+
+参见[演示页面](http://haixing-hu.github.io/gift-to-lover/demo/index.html)
+
 ## 使用方法
 
 - check out 这个代码库；如果不会用git，也可以直接下载整个代码库的压缩包然后解压；

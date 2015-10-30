@@ -2,20 +2,21 @@ body {
   background-color: #000;
 }
 
-.navbar {
+.toolbar {
   float: right;
   z-index: 9999;
-  margin-top: 15px;
+  margin: 10px;
 }
 
-.navbar a {
+.toolbar a {
   display: none;
-  margin: 15px;
+  margin: 2px;
   text-decoration: none;
   cursor: pointer;
+  font-size: 20px;
 }
 
-.navbar a {
+.toolbar a {
   transition: 1s color;
   moz-transition: 1s color; /* Firefox 4 */
   -webkit-transition: 1s color; /* Safari 和 Chrome */
@@ -23,6 +24,6 @@ body {
   color: #c2c2c2;
 }
 
-.navbar a:hover {
+.toolbar a:hover {
   color: #fff;
 }
