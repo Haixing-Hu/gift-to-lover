@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>A Gift to My Lover</title>
-<!-- <link rel="stylesheet" type="text/css" href="lib/PACE/black/pace-theme-mac-osx.css"> -->
 <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="lib/vegas/dist/vegas.min.css">
 <link rel="stylesheet" type="text/css" href="index.css">
@@ -12,11 +11,23 @@
 
 <body>
   <div class="toolbar">
+    <a id="first">
+      <i class="fa fa-fw fa-step-backward"></i>
+    </a>
+    <a id="previous">
+      <i class="fa fa-fw fa-backward"></i>
+    </a>
     <a id="play">
       <i class="fa fa-fw fa-play"></i>
     </a>
     <a id="pause">
       <i class="fa fa-fw fa-pause"></i>
+    </a>
+    <a id="next">
+      <i class="fa fa-fw fa-forward"></i>
+    </a>
+    <a id="last">
+      <i class="fa fa-fw fa-step-forward "></i>
     </a>
     <a id="volume-on">
       <i class="fa fa-fw fa-volume-up"></i>
@@ -30,6 +41,9 @@
     <a id="exit-fullscreen">
       <i class="fa fa-fw fa-times"></i>
     </a>
+  </div>
+  <div class="counter">
+    <span id="counter"></span>
   </div>
 </body>
 <script src="lib/jquery/dist/jquery.min.js"></script>

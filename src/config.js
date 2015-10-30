@@ -1,5 +1,7 @@
 /**
- * 此文件定义配置项
+ * Copyright 2015 Haixing Hu
+ *
+ * https://github.com/Haixing-Hu/gift-to-lover
  */
 
 /**
@@ -49,10 +51,13 @@ var ANIMATION = "random";
 
 /**
  * 图片显示时的动画延时，单位为毫秒（1000毫秒为1秒）。
- *
- * "auto"表示使用自动的值，即等于DELAY的值。建议使用"auto"。
  */
-var ANIMATION_DURATION = DELAY - TRANSITION_DURATION;
+var ANIMATION_DURATION = DELAY - TRANSITION_DURATION - 1000;
+
+/**
+ * 是否显示幻灯片计数器。
+ */
+var SHOW_SLIDES_COUNTER = true;
 
 /**
  * 是否显示致谢部分。建议设置为true，感谢所有的资源提供者。
@@ -60,38 +65,70 @@ var ANIMATION_DURATION = DELAY - TRANSITION_DURATION;
 var SHOW_ACKNOWLEDGEMENT = true;
 
 /**
+ * 是否显示幻灯片播放控制按钮（第一张，最后一张，前一张，下一张）。
+ */
+var SHOW_PLAY_CONTROL = true;
+
+/**
+ * 是否在最后一张幻灯片结束时停止播放。建议设置为true。
+ */
+var STOP_AT_END = true;
+
+/**
+ * 所有图片的总数目，默认为520张。如果要添加删除图片，请修改此数目。
+ */
+var SLIDES_COUNT = 563;
+
+/**
+ * 幻灯片播放的图片所在的目录，默认为 "./images"。
+ *
+ * 该目录中的图片必须为JPEG格式并以".jpg"为文件名后缀，图片总数目必须为SLIDES_COUNT。
+ * 图片的文件名必须从1开始编号，到SLIDES_COUNT为止，即"1.jpg", "2.jpg", ..., "520.jpg".
+ *
+ * 注意第一张图片"start.jpg"和最后一张图片"end.jpg"可以设置为特殊的图片，并增加相应的字幕。
+ */
+var SLIDES_DIR = "./images";
+
+/**
  * 幻灯片图片的URL列表。注意如果SHUFFLE选项为false，则会按照数组的顺序播放幻灯片。
  */
 var SLIDES = [];
+
+// 默认将使用SLIDES_DIR目录下的所有电影截图，按照其文件名顺序播放，图片格式都必须为jpg。
+// 如果要增加或减少图片的数目，请修改SLIDES_COUNT的值。
+// 当然，也可以直接定义SLIDES数组的值，不过那样图片多了会比较麻烦。
+(function() {
+  SLIDES.push(SLIDES_DIR + "/start.jpg");
+  for (var i = 1; i <= SLIDES_COUNT; ++i) {
+    SLIDES.push(SLIDES_DIR + "/" + i + ".jpg");
+  }
+  SLIDES.push(SLIDES_DIR + "/end.jpg");
+})();
+
+/**
+ * 所有背景音乐的总数目。如果要添加删除音乐，请修改此数目。
+ */
+var MUSICS_COUNT = 1;
+
+/**
+ * 播放的背景音乐所在的目录，默认为 "./musics"。
+ *
+ * 该目录中的音乐必须为MP3格式并以".mp3"为文件名后缀，音乐总数目必须为MUSICS_COUNT。
+ * 音乐的文件名必须从1开始编号，到MUSICS_COUNT为止，即"1.mp3", "2.mp3", ..., "100.mp3".
+ */
+var MUSICS_DIR = "./musics";
 
 /**
  * 幻灯片播放时背景音乐的URL列表。注意如果SHUFFLE选项为false，则会按照数组的顺序播放音乐。
  */
 var MUSICS = [];
 
-// 默认将使用"images"目录下的所有电影截图，按照其文件名顺序播放，图片格式都必须为jpg。
-// 如果要增加或减少图片的数目，请修改下面循环的最大值。
-// 另外，start.jpg 是第一张要播放的；end.jpg是最后一张。
-// 当然，也可以直接定义SLIDES数组的值，不过那样图片多了会比较麻烦。
-(function() {
-  SLIDES.push("./images/start.jpg");
-  for (var i = 1; i <= 388; ++i) {
-    SLIDES.push("./images/" + i + ".jpg");
-  }
-  SLIDES.push("./images/end.jpg");
-})();
-
 // 默认将使用"musics"目录下的所有音乐，按照其文件名顺序播放。
-// 如果要增加或减少音乐的数目，请修改下面循环的最大值。
-// 另外，start.mp3 是第一首要播放的；end.mp3 是最后一首。
-// 当然，也可以直接定义MUSICS数组的值，不过那样图片多了会比较麻烦。
-// (function() {
-//   MUSICS.push("musics/start.mp3");
-//   for (var i = 1; i <= 388; ++i) {
-//     MUSICS.push("musics/" + i + ".mp3");
-//   }
-//   MUSICS.push("musics/end.mp3");
-// })();
+// 默认将使用MUSICS_DIR目录下的所有音乐，按照其文件名顺序播放，音乐格式都必须为mp3。
+// 如果要增加或减少音乐的数目，请修改MUSICS_COUNT的值。
+// 当然，也可以直接定义MUSICS数组的值，不过那样音乐多了会比较麻烦。
 (function() {
-  MUSICS.push("./musics/一生所爱-原声带.mp3");
+  for (var i = 1; i <= MUSICS_COUNT; ++i) {
+    MUSICS.push(MUSICS_DIR + "/" + i + ".mp3");
+  }
 })();

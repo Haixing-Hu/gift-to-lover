@@ -48,11 +48,11 @@ body .vegas-container {
     overflow: hidden !important;
     position: relative;
 }
-    
+
 .vegas-video {
-    min-width: 100%; 
+    min-width: 100%;
     min-height: 100%;
-    width: auto; 
+    width: auto;
     height: auto;
 }
 
@@ -69,7 +69,7 @@ body.vegas-container {
     }
 
     /* Target Safari IOS7+ in order to add 76px */
-    _::full-page-media, _:future, 
+    _::full-page-media, _:future,
     :root body.vegas-container > .vegas-slide,
     :root body.vegas-container > .vegas-overlay {
         bottom: -76px;
@@ -188,7 +188,7 @@ body.vegas-container {
 .vegas-transition-slideLeft2-in {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
-            transform: translateX(0%); 
+            transform: translateX(0%);
 }
 
 .vegas-transition-slideLeft2-out {
@@ -209,7 +209,7 @@ body.vegas-container {
 .vegas-transition-slideRight2-in {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
-            transform: translateX(0%); 
+            transform: translateX(0%);
 }
 
 .vegas-transition-slideRight2-out {
@@ -230,7 +230,7 @@ body.vegas-container {
 .vegas-transition-slideUp2-in {
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
-            transform: translateY(0%); 
+            transform: translateY(0%);
 }
 
 .vegas-transition-slideUp2-out {
@@ -251,7 +251,7 @@ body.vegas-container {
 .vegas-transition-slideDown2-in {
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
-            transform: translateY(0%); 
+            transform: translateY(0%);
 }
 
 .vegas-transition-slideDown2-out {
@@ -321,7 +321,7 @@ body.vegas-container {
 .vegas-transition-swirlLeft2-in {
     -webkit-transform: scale(1) rotate(0deg);
         -ms-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg); 
+            transform: scale(1) rotate(0deg);
     opacity: 1;
 }
 
