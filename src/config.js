@@ -15,9 +15,9 @@ var TITLE = "献给我最爱的人";
 var PRELOAD_IMAGES = false;
 
 /**
- * 是否预加载所有的音乐。
+ * 是否预加载所有的音乐。默认为只预加载元数据。
  */
-var PRELOAD_MUSICS = false;
+var PRELOAD_MUSICS = "metadata";
 
 /**
  * 是否自动播放图片和音乐。

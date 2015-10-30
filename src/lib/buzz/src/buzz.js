@@ -45,7 +45,7 @@
         },
         sounds: [],
         el: document.createElement('audio'),
-        
+
         getAudioContext: function() {
             if (this.audioCtx === undefined) {
                 try {
@@ -55,7 +55,7 @@
                     this.audioCtx = null;
                 }
             }
-          
+
             return this.audioCtx;
         },
 
@@ -663,7 +663,7 @@
                 }
 
                 this.sound = doc.createElement('audio');
-                
+
                 // Use web audio if possible to improve performance.
                 if (options.webAudioApi) {
                     var audioCtx = buzz.getAudioContext();
