@@ -1,3 +1,9 @@
+/**
+ * Copyright 2015 Haixing Hu
+ *
+ * https://github.com/Haixing-Hu/gift-to-lover
+ */
+
 /*
   Native FullScreen JavaScript API
   -------------

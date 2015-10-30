@@ -1,12 +1,27 @@
+/**
+ * Copyright 2015 Haixing Hu
+ *
+ * https://github.com/Haixing-Hu/gift-to-lover
+ */
+
 // 文档初始化后执行
 $(function() {
   // set the title
   $("title").html(TITLE);
-  // set toolbar icons
+  // set the element visibility
+  if (SHOW_SLIDES_COUNTER) {
+    $("#counter").show();
+  }
   if (AUTOPLAY) {
     $("#pause").show();
   } else {
     $("#play").show();
+  }
+  if (SHOW_PLAY_CONTROL) {
+    $("#first").show();
+    $("#previous").show();
+    $("#next").show();
+    $("#last").show();
   }
   $("#volume-on").show();
   if (fullScreenApi.supportsFullScreen) {
@@ -41,9 +56,33 @@ $(function() {
     transitionDuration: TRANSITION_DURATION,
     animation: ANIMATION,
     animationDuration: ANIMATION_DURATION,
-    slides: slides
+    slides: slides,
+    walk: function (index, slideSettings) {
+      if (index >= 1 && index <= SLIDES_COUNT) {
+        $("#counter").html(index);
+      } else {
+        $("#counter").html("");
+      }
+      if (STOP_AT_END && index > SLIDES_COUNT) {
+        slides.pause();
+        $("#pause").hide();
+        $("#play").show();
+      }
+    }
   })[0]._vegas;
   // set event handlers
+  $("#first").on("click", function() {
+    slides.jump(0);
+  });
+  $("#previous").on("click", function() {
+    slides.previous();
+  });
+  $("#next").on("click", function() {
+    slides.next();
+  });
+  $("#last").on("click", function() {
+    slides.jump(SLIDES_COUNT + 1);
+  });
   $("#pause").on("click", function() {
     bgm.pause();
     slides.pause();
@@ -78,7 +117,6 @@ $(function() {
   });
   if (AUTOPLAY) {
     bgm.loop().play().fadeIn();
-    console.dir(slides);
     slides.play();
   }
 });

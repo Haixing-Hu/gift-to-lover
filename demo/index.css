@@ -8,15 +8,12 @@ body {
   margin: 10px;
 }
 
-.toolbar a {
+.toolbar > a {
   display: none;
   margin: 2px;
   text-decoration: none;
   cursor: pointer;
   font-size: 20px;
-}
-
-.toolbar a {
   transition: 1s color;
   moz-transition: 1s color; /* Firefox 4 */
   -webkit-transition: 1s color; /* Safari 和 Chrome */
@@ -24,6 +21,19 @@ body {
   color: #c2c2c2;
 }
 
-.toolbar a:hover {
+.toolbar > a:hover {
   color: #fff;
+}
+
+.counter {
+  margin-top: 30px;
+}
+
+.counter > span {
+  display: none;
+  font-family: "Comic Sans MS";
+  font-size: 80px;
+  font-weight: bolder;
+  color: #c2c2c2;
+  margin: 30px;
 }
