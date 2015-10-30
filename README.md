@@ -76,7 +76,7 @@
   http://tympanus.net/codrops/2011/07/05/fullscreen-slideshow-with-html5-audio/
 - 全屏显示的代码来自于下面的博文：
   http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/
-- Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了：
+- Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了，连官网都找不到链接了：
   http://macphun.com/
 
 ## 请我喝杯咖啡
