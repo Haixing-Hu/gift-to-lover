@@ -75,9 +75,9 @@ var SHOW_PLAY_CONTROL = true;
 var STOP_AT_END = true;
 
 /**
- * 所有图片的总数目，默认为520张。如果要添加删除图片，请修改此数目。
+ * 所有图片的总数目，目前有562张。如果要添加删除图片，请修改此数目。
  */
-var SLIDES_COUNT = 563;
+var SLIDES_COUNT = 562;
 
 /**
  * 幻灯片播放的图片所在的目录，默认为 "./images"。
