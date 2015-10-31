@@ -18,7 +18,7 @@
 
 ## 演示
 
-参见[演示页面](http://haixing-hu.github.io/gift-to-lover/demo/index.html)
+参见[演示页面](http://haixing-hu.github.io/gift-to-lover/repo/src/index.html)
 
 ## 使用方法
 
