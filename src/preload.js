@@ -12,22 +12,40 @@
   var imageCache = [];
   var audioCache = [];
 
-  var preloadImages = function(images, onLoad) {
+  /**
+   * Preload images.
+   *
+   * @param images
+   *    the array of URLs of images to be preloaded.
+   * @param join
+   *    a Join object used to notify the finish of asynchronous operations.
+   * @see https://github.com/FuturesJS/join
+   */
+  var preloadImages = function(images, join) {
     var n = images.length;
     for (var i = 0; i < n; ++i) {
       var image = new Image();
-      image.onload = onLoad;
+      image.onload = join.add();
       image.src = images[i];
       imageCache.push(image);
     }
   };
 
-  var preloadAudios = function(audios, onLoad) {
+  /**
+   * Preload audios.
+   *
+   * @param audios
+   *    the array of URLs of audios to be preloaded.
+   * @param join
+   *    a Join object used to notify the finish of asynchronous operations.
+   * @see https://github.com/FuturesJS/join
+   */
+  var preloadAudios = function(audios, join) {
     var n = audios.length;
     for (var i = 0; i < n; ++i) {
       var audio = new Audio();
       // audio.onload = onLoad;  // it doesn't work
-      audio.addEventListener('canplaythrough', onLoad, false);  // this works
+      audio.addEventListener('canplaythrough', join.add(), false);  // this works
       audio.src = audios[i];
       audioCache.push(audio);
     }
