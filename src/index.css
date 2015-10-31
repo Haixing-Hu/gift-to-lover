@@ -6,7 +6,6 @@ body {
   float: right;
   z-index: 9999;
   margin: 10px;
-  background: transparent;
 }
 
 .toolbar > a {
@@ -29,7 +28,6 @@ body {
 .counter {
   float: left;
   z-index: 9998;
-  background: transparent;
 }
 
 .counter > span {
@@ -40,3 +38,14 @@ body {
   color: #c2c2c2;
   margin: 30px;
 }
+
+.loading {
+  display: none;
+  margin: auto;
+}
+
+.loading > .message {
+  font-size: 60px;
+  font-color: #fff;
+}
+
