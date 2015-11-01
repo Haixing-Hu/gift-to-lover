@@ -19,7 +19,7 @@ if [ "$1" == "--help" -o "$1" == "-h" ]; then
 fi
 
 declare file, ext, newfile, i=1;
-for file in *; do
+for file in $(ls | sort -n); do
   ext="${file##*.}";
   newfile="${i}.${ext}.tmp";
   echo "rename ${file} to ${newfile}";

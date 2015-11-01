@@ -209,11 +209,12 @@ function createSlidePlayer() {
     animationDuration: ANIMATION_DURATION,
     slides: slides,
     walk: function (index, slideSettings) {
-      if (index >= 1 && index <= IMAGE_COUNT) {
-        $("#counter").html(index);
-      } else {
-        $("#counter").html("");
-      }
+      // if (index >= 1 && index <= IMAGE_COUNT) {
+      //   $("#counter").html(index);
+      // } else {
+      //   $("#counter").html("");
+      // }
+      $("#counter").html(index + 1);
       if ((index > IMAGE_COUNT) && (! LOOP_SLIDES)) {
         player.pause();
         $("#pause").hide();

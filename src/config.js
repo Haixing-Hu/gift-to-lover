@@ -109,7 +109,7 @@ var LOADING_DELAY = 1000;
 /**
  * 所有图片的总数目。如果要添加删除图片，请修改此数目。
  */
-var IMAGE_COUNT = 572;
+var IMAGE_COUNT = 518;
 
 /**
  * 幻灯片播放的图片所在的目录，默认为 "./images"。
