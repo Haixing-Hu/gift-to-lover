@@ -52,11 +52,11 @@ function createLoadingIndicator(message) {
     trailWidth: 5,
     easing: "easeInOut",
     text: {
-      value: "0"
+      value: "0%"
     },
     step: function(state, bar) {
       bar.path.setAttribute('stroke', state.color);
-      bar.setText((bar.value() * 100).toFixed(0));
+      bar.setText((bar.value() * 100).toFixed(0) + "%");
     }
   });
   return circle;
