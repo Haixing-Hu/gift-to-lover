@@ -60,7 +60,6 @@
 - [ ] 最后增加一个可选的致谢字幕，向项目的资源提供者表示感谢；
 - [ ] 制作脚本一键发布项目到某些常见的个人网站（比如发布到自己的github page上）；
 - [ ] 制作脚本将项目打包为成苹果、安卓的手机应用；
-- [ ] ~~支持i18n，让歪果的程序猿也能用得上~~；
 
 ## 致谢
 
@@ -70,6 +69,14 @@
   http://www.zhihu.com/question/21682442/answer/36924153?group_id=636890926812016640
 - 还有个网上流传的所谓“520张我爱你电影截图.rar”，原始出处已经找不到了，网盘下载链接在此：
   http://pan.baidu.com/share/link?uk=2033284939&shareid=1230432853
+- 部分图片还来源于下面的贴吧帖子：
+  http://tieba.baidu.com/p/1808798036
+- 以及下面的贴吧帖子：
+  http://tieba.baidu.com/p/2379987803
+- 部分图片还来源于下面的相册：
+  http://www.topit.me/album/1114176
+- 还有 @狼魄乾坤 同学的这个豆瓣相册：
+  http://www.douban.com/photos/album/157693223/
 - 幻灯片播放代码来自于 Jay Salvat 的 vegas 项目：
   https://github.com/jaysalvat/vegas
 - 音乐播放代码来自于 Jay Salvat 的 buzz 项目：
