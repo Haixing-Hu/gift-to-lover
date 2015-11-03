@@ -91,6 +91,8 @@
   http://stackoverflow.com/questions/5313646/how-to-preload-a-sound-in-javascript
 - Mac上用于查找相似图片的商业软件 Snapselect，不过奇怪的是这么好的软件似乎已经停止销售了，连官网都找不到产品页面了。目前该软件在 App Store 上免费提供：
   https://itunes.apple.com/us/app/snapselect-amazing-photo-duplicates/id935700987
+- Mac上用于查找相似图片的商业软件 PhotoSweeper：
+  https://itunes.apple.com/us/app/photosweeper/id463362050
 
 ## 请我喝杯咖啡
 
