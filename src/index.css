@@ -3,7 +3,9 @@ body {
 }
 
 .toolbar {
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 10px;
   z-index: 9999;
   margin: 10px;
 }
@@ -26,7 +28,9 @@ body {
 }
 
 .counter {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 10px;
   z-index: 9999;
 }
 

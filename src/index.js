@@ -193,7 +193,6 @@ function createSlidePlayer() {
   for (var i = 0; i < IMAGES.length; ++i) {
     slides.push({src : IMAGES[i]});
   }
-  //console.dir(slides);
   var player = $("body").vegas({
     slide: -1, // since the call of play() will move to the next slide
     preload: false,   // we will use our customized preload mechanism
@@ -207,7 +206,8 @@ function createSlidePlayer() {
     valign: "center",
     transition: TRANSITION,
     transitionDuration: TRANSITION_DURATION,
-    animation: ANIMATION,
+    //animation: ANIMATION,
+    animation: 'kenburns',
     animationDuration: ANIMATION_DURATION,
     slides: slides,
     walk: function (index, slideSettings) {
