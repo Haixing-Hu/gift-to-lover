@@ -22,12 +22,12 @@ var LOADING_MUSICS = "正在载入音乐，请稍后……";
 /**
  * 是否预加载所有的图片。
  */
-var PRELOAD_IMAGES = true;
+var PRELOAD_IMAGES = false;
 
 /**
  * 是否预加载所有的音乐。
  */
-var PRELOAD_MUSICS = true;
+var PRELOAD_MUSICS = false;
 
 /**
  * 是否自动播放图片和音乐。

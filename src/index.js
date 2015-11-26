@@ -56,7 +56,7 @@ function createLoadingIndicator(message) {
     },
     step: function(state, bar) {
       bar.path.setAttribute('stroke', state.color);
-      bar.setText((bar.value() * 100).toFixed(0) + "%");
+      bar.setText(Math.abs(bar.value() * 100).toFixed(0) + "%");
     }
   });
   return circle;
@@ -111,6 +111,7 @@ function preloadImages(next) {
       }, LOADING_DELAY);
     });
   } else {
+    $(".loading-container").hide();
     next();
   }
 }
@@ -192,6 +193,7 @@ function createSlidePlayer() {
   for (var i = 0; i < IMAGES.length; ++i) {
     slides.push({src : IMAGES[i]});
   }
+  //console.dir(slides);
   var player = $("body").vegas({
     slide: -1, // since the call of play() will move to the next slide
     preload: false,   // we will use our customized preload mechanism
@@ -209,13 +211,8 @@ function createSlidePlayer() {
     animationDuration: ANIMATION_DURATION,
     slides: slides,
     walk: function (index, slideSettings) {
-      // if (index >= 1 && index <= IMAGE_COUNT) {
-      //   $("#counter").html(index);
-      // } else {
-      //   $("#counter").html("");
-      // }
       $("#counter").html(index + 1);
-      if ((index > IMAGE_COUNT) && (! LOOP_SLIDES)) {
+      if (index > IMAGE_COUNT && !LOOP_SLIDES) {
         player.pause();
         $("#pause").hide();
         $("#play").show();
